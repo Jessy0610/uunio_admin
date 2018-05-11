@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CLET_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UUNIO">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="UUNIO">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="UUNIO">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/ico-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<div class="background-black"></div>
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/account.html" class="nanum fw-bold">회원관리</a>
+					</li>
+					<li class="fl on">
+						<a href="/ico.html">ICO</a>
+					</li>
+					<li class="fl">
+						<a href="/kyc.html">KYC</a>
+					</li>
+				</ul>
+				<button type="submit" class="logout-btn fr">log out</button>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<ul class="ico-menu fl">
+				<li class="on">
+					<span>기본정보</span>
+				</li>
+				<li>
+					<span>송금내역</span>
+				</li>
+			</ul>
+			<div class="ico-section ico-info-section fr">
+				<div class="ico-info-box">
+					<h2>UUNIO ICO 기본 정보</h2>
+					<div class="top-section clear">
+						<h3 class="fl">모금액</h3>
+						<ul class="collection fr">
+							<li class="eth-num">5,456,789 ETH (1025명)</li>
+							<li class="qtum-num">1,202,354,589 QTUM (890명)</li>
+							<li>달성률 : <span class="ach-rate">n</span>%</li>
+						</ul>
+					</div>
+					<div class="bottom-section clear">
+						<h3 class="fl">현재 기준가격</h3>
+						<table class="fr">
+							<thead>
+								<tr>
+									<th></th>
+									<th>코인(USD)</th>
+									<th>코인/UUNIO</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>ETH</td>
+									<td><span id="eth-usd">647.03</span></td>
+									<td class="eth-uunio"></td>
+<!--									<td class="eth-uunio">0.00012364</td>-->
+								</tr>
+								<tr>
+									<td>QTUM</td>
+									<td id="qtum-usd">19.97</td>
+									<td class="qtum-uunio"></td>
+<!--									<td class="qtum-uunio">0.00400600</td>-->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="ico-section record-section fr">
+				<div class="record-box">
+					<div class="record-heading clear">
+						<h2 class="fl">송금 내역</h2>
+						<div class="search-box fr clear">
+							<form method="post"class="fl">
+								<p class="search-date">
+									<input type="text" type="number" class="start-month"> 월 
+									<input type="text" type="number" class="start-day"> 일 ~ 
+									<input type="text" type="number" class="end-month"> 월 
+									<input type="text" type="number" class="end-day"> 일
+								</p>
+							</form>
+							<button type="submit" class="search-btn fl clear">
+								검색<img src="/assets/images/search.svg" class="fr">
+							</button>
+							<button type="button" class="excel fl">엑셀로 내보내기</button>
+						</div>
+					</div>
+					<table>
+						<thead>
+							<tr>
+							<th>시간 <img src="/assets/images/caret_down.svg"></th>
+							<th>이름 <img src="/assets/images/caret_down.svg"></th>
+							<th>코인 <img src="/assets/images/caret_down.svg"></th>
+							<th>기준가격<br>(코인/UUNIO)</th>
+							<th>송금액(코인)</th>
+							<th>UUNIO 보상액<br>(송금액/기준가격)</th>
+							<th>TxID</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="time">18.04.25 18:02:03</td>
+								<td class="txid-popup-name">김마크</td>
+								<td class="coin">ETH</td>
+								<td class="standard">0.000012075</td>
+								<td class="remittance">12.2211300</td>
+								<td class="uunio-amount">1,012,101.86335403</td>
+								<td class="txid">
+									<button type="button" class="txid-confirm">TxID확인</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="time">18.04.25 18:02:03</td>
+								<td class="txid-popup-name">강한나</td>
+								<td class="coin">ETH</td>
+								<td class="standard">0.000012075</td>
+								<td class="remittance">12.2211300</td>
+								<td class="uunio-amount">1,012,101.86335403</td>
+								<td class="txid">
+									<button type="button" class="txid-confirm">TxID확인</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="time">18.04.25 18:02:03</td>
+								<td class="txid-popup-name">강제시</td>
+								<td class="coin">ETH</td>
+								<td class="standard">0.000012075</td>
+								<td class="remittance">12.2211300</td>
+								<td class="uunio-amount">1,012,101.86335403</td>
+								<td class="txid">
+									<button type="button" class="txid-confirm">TxID확인</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="time">18.04.25 18:02:03</td>
+								<td class="txid-popup-name">박정수한무한거북이이이이</td>
+								<td class="coin">ETH</td>
+								<td class="standard">0.000012075</td>
+								<td class="remittance">12.2211300</td>
+								<td class="uunio-amount">1,012,101.86335403</td>
+								<td class="txid">
+									<button type="button" class="txid-confirm">TxID확인</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--TxID 확인 팝업 시작-->
+			<div class="txid-popup popup center-all">
+				<h2>TxID확인</h2>
+				<ul>
+					<li>
+						<p>받은 TxID</p>
+						<p class="reception">0xb59940AD3Ef3cAF92DA5E34B045505a626992cDB</p>
+					</li>
+					<li>
+						<p>아이디</p>
+						<p class="tx-id">mark.uun.io@gmail.com</p>
+					</li>
+					<li>
+						<p>이름</p>
+						<p class="tx-name">김마크</p>
+					</li>
+					<li>
+						<p>보낸 TxID</p>
+						<p class="sending">0xb86650AD3Ef3cAF95AA5E34B045505a451287cAF</p>
+					</li>
+				</ul>
+				<button type="button" class="close-popup center-x">확인</button>
+			</div>
+			<!--TxID 팝업 끝-->
+		</div>
+		<!--footer 시작-->
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+		<!--footer 끝-->
+	</div>
+</body>

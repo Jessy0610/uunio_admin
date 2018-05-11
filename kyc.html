@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UUNIO KYC_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UUNIO">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="UUNIO">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="UUNIO">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/kyc_style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<div class="background-black"></div>
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/account.html" class="nanum fw-bold">회원관리</a>
+					</li>
+					<li class="fl">
+						<a href="/ico.html">ICO</a>
+					</li>
+					<li class="fl on">
+						<a href="/kyc.html">KYC</a>
+					</li>
+				</ul>
+				<button type="submit" class="logout-btn fr">log out</button>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<!--kyc 메뉴 시작-->
+			<ul class="kyc-menu fl">
+				<li class="on">
+					<span>KYC인증대기</span>
+				</li>
+				<li>
+					<span>KYC 완료</span>
+				</li>
+			</ul>
+			<!--kyc 메뉴 끝-->
+			<!--kyc section 시작-->
+			<div class="kyc-section kyc-holding-section fr">
+				<!--kyc인증대기 시작-->
+				<div class="kyc-holding-box">
+					<div class="heading clear">
+						<h2 class="fl">KYC 인증대기</h2>
+						<form method="get" class="clear fr">
+							<select class="fl">
+								<option selected="selected">아이디</option>
+								<option>이름</option>
+								<option>국가</option>
+							</select>
+							<div class="input-group clear fr">
+								<input type="text" value="" class="form-control search-box">
+								<button type="submit" class="btn btn-primary">
+									<img src="/assets/images/search.svg" class="search">
+								</button>
+							</div>
+						</form>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>신청일자</th>
+								<th>이름</th>
+								<th>아이디</th>
+								<th>국가</th>
+								<th>상태</th>
+								<th>상세보기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="kyc-date">18.05.20 19:02:03</td>
+								<td class="kyc-name">마크김</td>
+								<td class="kyc-id">mark@uun.io</td>
+								<td class="kyc-country">Korea, Republic of</td>
+								<td class="status">최초</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.05.05 18:02:03</td>
+								<td class="kyc-name">한나강</td>
+								<td class="kyc-id">hannah@gmail.com</td>
+								<td class="kyc-country">Canada</td>
+								<td class="status">재심사</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.04.25 18:02:03</td>
+								<td class="kyc-name">제시강</td>
+								<td class="kyc-id">jessy@gmail.com</td>
+								<td class="kyc-country">United Kingdom</td>
+								<td class="status">최초</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.04.23 18:02:03</td>
+								<td class="kyc-name">수한무거북이와두루미삼천갑자동방삭Kim</td>
+								<td class="kyc-id">soohan@gmail.com</td>
+								<td class="kyc-country">Estonia</td>
+								<td class="status">거절</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--kyc인증대기 끝-->
+				<!--kyc인증완료 시작-->
+				<div class="kyc-verified-box">
+					<div class="heading clear">
+						<h2 class="fl">KYC 완료</h2>
+						<form method="get" class="clear fr">
+							<select class="fl">
+								<option selected="selected">아이디</option>
+								<option>이름</option>
+								<option>국가</option>
+							</select>
+							<div class="input-group clear fr">
+								<input type="text" value="" class="form-control search-box">
+								<button type="submit" class="btn btn-primary">
+									<img src="/assets/images/search.svg" class="search">
+								</button>
+							</div>
+						</form>
+						<button type="button" class="excel fr">액셀로 내보내기</button>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>완료일자</th>
+								<th>이름</th>
+								<th>아이디</th>
+								<th>국가</th>
+								<th>상세보기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="kyc-date">18.05.20 19:02:03</td>
+								<td class="kyc-name">마크김</td>
+								<td class="kyc-id">mark@uun.io</td>
+								<td class="kyc-country">Korea, Republic of</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.05.05 18:02:03</td>
+								<td class="kyc-name">한나강</td>
+								<td class="kyc-id">hannah@gmail.com</td>
+								<td class="status">Canada</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.04.25 18:02:03</td>
+								<td class="kyc-name">제시강</td>
+								<td class="kyc-id">jessy@gmail.com</td>
+								<td class="kyc-country">United Kingdom</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="kyc-date">18.04.23 18:02:03</td>
+								<td class="kyc-name">수한무거북이와두루미삼천갑자동방삭Kim</td>
+								<td class="kyc-id">soohan@gmail.com</td>
+								<td class="kyc-country">Estonia</td>
+								<td class="more">
+									<button type="button" class="more-btn">상세보기</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--kyc인증완료 끝-->
+			</div>
+			<!--kyc section 끝-->
+			<!--인증대기 상세페이지 시작-->
+			<div class="kyc-page">
+				<h2>KYC상세페이지</h2>
+				<div class="kyc-inner clear">
+					<table class="fl">
+						<tr>
+							<td>아이디</td>
+							<td class="kyc-id">mark.uunio@gmail.com</td>
+						</tr>
+						<tr>
+							<td>이름</td>
+							<td class="kyc-name">수한무거북이와두루미삼천갑자동방삭Kim</td>
+						</tr>
+						<tr>
+							<td>가입일자</td>
+							<td class="kyc-date">2018. 04. 20.</td>
+						</tr>
+						<tr>
+							<td>전화번호</td>
+							<td><span class="country-colde">Korea Republic of</span><br><span>1051921638</span></td>
+						</tr>
+						<tr>
+							<td>생년월일</td>
+							<td class="kyc-birth">1994. 06. 04</td>
+						</tr>
+						<tr>
+							<td>반려사유</td>
+							<td class="kyc-return">최초 신청</td>
+						</tr>
+						<tr>
+							<td colspan="2">AML</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<form name="check_form" method="post" onsubmit="return validateForm()">
+									<input id="checkBox" type="checkbox" name="aml-check" class="aml-check" required>Watchlist에 해당 사용자가 없는 것을 확인하였습니다.
+									<button type="submit" class="verified" disabled>
+										<img src="/assets/images/check.svg" class="center-y"> 인증통과
+									</button>
+									<button type="submit" class="refused">
+										<img src="/assets/images/close.svg" class="center-y"> 인증거절
+									</button>
+								</form>
+							</td>
+						</tr>
+					</table>
+					<div class="photo-section fr">
+						<h3>사진 인증 정보</h3>
+						<ul class="clear">
+							<li class="fl">
+								<div class="id-card-photo">
+									<img href="" class="verify-img">
+								</div>
+								<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+							</li>
+							<li class="fr">
+								<div class="self-photo">
+									<img href="" class="verify-img">
+								</div>
+								<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+							</li>
+						</ul>
+						<p>클릭하여 크게보기<br>&#8251;성명, 생년월일, 국가, 주소 확인</p>
+						<img class="scaled-img popup">
+					</div>
+				</div>
+			</div>
+			<!--인증허가 팝업 시작-->
+			<div class="verified-popup popup center-x clear">
+				<p>
+					<span class="member-id">mark.uun.io@gmail.com</span>님의<br>KYC 인증을 허가합니다.
+				</p>
+				<button type="submit" class="confirm close-popup disabled fl">확인</button>
+				<button type="button" class="cancel close-popup fr">취소</button>
+			</div>
+			<!--인증허가 팝업 끝-->
+			<!--인증거절 팝업 시작-->
+			<div class="refused-popup popup center-x clear">
+				<p>
+					<span class="member-id">mark.uun.io@gmail.com</span>님의<br>KYC 인증을 거절합니다.
+				</p>
+				<form method="post" class="clear">
+					<span class="fl">사유</span>
+					<select required class="fr">
+						<option selected>ICO 비 허용 국가</option>
+						<option>유효하지 않은 신분증 사용</option>
+						<option>사진을 알아보기 어려움</option>
+						<option>관련이 없는 사진 사용</option>
+						<option>신분증과 사용자가 일치하지 않음</option>
+						<option>도용된 사진 사용</option>
+						<option>중복 신청</option>
+						<option>요구사항 미충족</option>
+						<option>AML Watchlist에 등록된 사용자</option>
+						<option>기타(support@uun.io로 문의)</option>
+					</select>
+					<span class="fl">언어</span>
+					<select class="fr" required>
+						<option selected>한국어</option>
+						<option>영어</option>
+						<option>중문간체</option>
+						<option>중문번체</option>
+					</select>
+					<button type="submit" onclick="reroad" class="confirm fl">확인</button>
+					<button type="button" class="cancel fr">취소</button>
+				</form>
+			</div>
+			<!--인증거절 팝업 끝-->
+			<!--인증대기 상세페이지 끝-->
+			<!--인증완료 상세페이지 시작-->
+			<div class="kyc-member-page">
+				<h2>KYC상세페이지</h2>
+				<div class="kyc-inner clear">
+					<table class="fl">
+						<tr>
+							<td>아이디</td>
+							<td class="kyc-id">mark.uunio@gmail.com</td>
+						</tr>
+						<tr>
+							<td>이름</td>
+							<td class="kyc-name">수한무거북이와두루미삼천갑자동방삭Kim</td>
+						</tr>
+						<tr>
+							<td>가입일자</td>
+							<td class="kyc-date">2018. 04. 20.</td>
+						</tr>
+						<tr>
+							<td>전화번호</td>
+							<td><span class="country-colde">Korea Republic of</span><br><span>1051921638</span></td>
+						</tr>
+						<tr>
+							<td>생년월일</td>
+							<td class="kyc-birth">1994. 06. 04</td>
+						</tr>
+						<tr>
+							<td>반려사유</td>
+							<td class="kyc-return">최초 신청</td>
+						</tr>
+						<tr>
+							<td>AML</td>
+							<td>Watchlist에 해당 사용자가 등록되어 있지 않은 것을 확인하였습니다.</td>
+						</tr>
+					</table>
+					<div class="photo-section fr">
+						<h3>사진 인증 정보</h3>
+						<ul class="clear">
+							<li class="fl">
+								<div class="id-card-photo">
+									<img href="" class="verify-img">
+								</div>
+								<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+							</li>
+							<li class="fr">
+								<div class="self-photo">
+									<img href="" class="verify-img">
+								</div>
+								<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+							</li>
+						</ul>
+						<p>클릭하여 크게보기</p>
+						<img class="scaled-img popup">
+					</div>
+				</div>
+			</div>
+			<!--인증완료 상세페이지 끝-->
+		</div>
+		<!--footer 시작-->
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+		<!--footer 끝-->
+	</div>
+</body>
